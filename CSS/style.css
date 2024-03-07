@@ -34,12 +34,12 @@
         --color-tertiary: black;
         --color-base: blue;
         --color-detail: navy;
-        --color-table: rgb(97,97,237);
+        --color-table: rgba(75, 75, 148, 0.603);
         --color-text-box: rgba(255,255,255,.8);
         --color-text-box-focus: rgba(255,255,255,1);
         --color-bg-footer: #03020b;
         --color-card: rgba(0, 0, 0, .5);
-        --color-btn: rgba(43, 58, 194, 0.5);
+        --color-btn: rgba(75, 75, 148, 0.603);
         --color-btn-hover: transparent;
     }
 
@@ -84,7 +84,6 @@
 /*#endregion*/
 
 /*#region header*/
-
 /*menu hamburguer*/
 .btnMenu{
     font-size: var(--title-default);
@@ -165,7 +164,7 @@
 
 .navbar button:hover{
     background-color: var(--color-btn-hover);
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-btn);
 }
 
 ul.sub{
@@ -239,7 +238,11 @@ video{
 /*#endregion*/
 
 /*#region emphasis*/
-
+    .imgFit{
+        width: 100vw;
+        height: 100vh;
+        padding: 0 6em;
+    }
 /*#endregion*/
 
 /*#region products*/
@@ -247,6 +250,65 @@ video{
 /*#endregion*/
 
 /*#region services*/
+    #services{
+        height: 100vh;
+        text-align: center;
+        padding: 5em;
+    }
+
+    .servicesContainer{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .servicesContainer h2{
+        padding: .5em;
+        font-size: var(--title-default);
+    }
+
+    .servicesInner{
+        width: 100%;
+        height: auto;
+    }
+
+    .servicesInner table{
+        width: 100%;
+        padding: 2.5em;
+        border-collapse: collapse;
+    }
+
+    .servicesInner table th{
+        font-size: var(--table-title);
+        padding: .8em 0;
+        border-bottom: thick double var(--color-secondary);
+    }
+
+    .servicesInner table td{
+        padding: .8em 0;
+        text-transform: capitalize;
+    }
+
+    .servicesInner table td a{
+        height: 1.5em;
+        line-height: 1.5em;
+        padding: .3em .9em;
+        /* background-color: var(--color-default); */
+    }
+
+    /* Zebrando a tabela */
+        /* linhas pares - even*/
+        .tabela tbody tr:nth-child(even){
+            background-color: var(--color-table);
+        }
+        /* linhas impares - odd */
+        /* .tabela tbody tr:nth-child(odd){
+            background-color: var(--color-);
+        } */
+    /*end */
+
+    
+
 
 /*#endregion*/
 
@@ -283,7 +345,6 @@ video{
     height: 100vh;
     width: 100%;
     text-align: center;
-
 }
 
 #localization h2{
