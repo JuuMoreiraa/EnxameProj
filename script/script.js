@@ -9,3 +9,10 @@ $(function () {
         }
     );
 });
+
+//section home video
+window.addEventListener("load", function(){
+    let video = window.document.querySelector("#video");
+    video.play();
+    video.loop = true;
+});
