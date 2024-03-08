@@ -219,7 +219,57 @@
 
             <!--region contact-->
             <section id="contact">
-
+                <h2>Send a message and mayve we'll answer some day</h2>
+                <div class="contactContainer">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <ul class="contactInner">
+                            <li>
+                                <input type="text" name="name" placeholder="Type your name here" autocomplete="off" required>
+                            </li>
+                            <li>
+                                <input type="email" name="email" placeholder="Type your e-mail here" autocomplete="off" required>
+                            </li>
+                            <li>
+                                <textarea name="message" cols="30" rows="10" placeholder="Type your mesage here" required></textarea>
+                            </li>
+                            <li class="formBtn">
+                                <input type="submit" value="Submit" class="btnDefault">
+                                <input type="reset" value="Cancel" class="btnDefault">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="">
+                                <span>I want to receive junk in my email account</span>
+                            </li>
+                        </ul>
+                        <!-- API input -->
+                        <input type="hidden" name="accessKey" value="9e3ce818-c764-41d8-a8e6-91ffa7194137">
+                        <!-- redirect page -->
+                        <input type="hidden" name="redirectTo" value='http://127.0.0.1:5500/thanks.html'>
+                    </form>
+                </div>
+                <footer>
+                    <div class="footerContainer">
+                        <ul>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#emphasis">emphasis</a></li>
+                            <li><a href="#product">product</a></li>
+                            <li><a href="#services">services</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#domain">domain</a></li>
+                            <li><a href="#localization">localization</a></li>
+                            <li><a href="#contact">contact</a></li>
+                            <li><a href="login.html">login</a></li>
+                        </ul>
+                        <!-- logo -->
+                        <a href="#home" class="logo">
+                            <i class='bx bxs-invader'></i>
+                            <span>Enxame</span>
+                        </a>
+                        <h5>&copy; Copyright all rights reserved 2001's powered by ZikinhA</h5>
+                    </div>
+                </footer>
             </section>
         </main>
     </div>
