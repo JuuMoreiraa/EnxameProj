@@ -24,6 +24,7 @@
         --table-title: 1.8em;
         --paragraph-default: 1.5em;
         --anchor-default: 1.2em;
+        --rascunho-default: .8em;
     }
 
     /* Colors */
@@ -32,15 +33,19 @@
         --color-primary: deepskyblue;
         --color-secondary: aliceblue;
         --color-tertiary: black;
+        --color-recomended:#777777;
         --color-base: blue;
         --color-detail: navy;
+        --color-detail2: #143f9bce;
         --color-table: rgba(75, 75, 148, 0.603);
         --color-text-box: rgba(255,255,255,.8);
         --color-text-box-focus: rgba(255,255,255,1);
         --color-bg-footer: #03020b;
         --color-card: rgba(0, 0, 0, .5);
         --color-btn: rgba(75, 75, 148, 0.603);
+        --color-btn2: #0764bb;
         --color-btn-hover: transparent;
+        --color-price: #43abd4;
     }
 
     /* Resources */
@@ -246,7 +251,116 @@ video{
 /*#endregion*/
 
 /*#region products*/
+    #products{
+        text-align: center;
+        padding: 7em 0;
+    }
 
+    #products h2{
+        font-size: var(--title-default);
+    }
+
+    #products span{
+        color: var(--color-primary);
+    }
+    
+    .productsContainer{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 5em 0;
+        
+    }
+    
+    .cardProd{
+        width: 20%;
+    }
+    
+    .cardProd li{
+        height: 4em;
+        line-height: 4em;
+        background-color: var(--color-secondary);
+        color: var(--color-tertiary); 
+    }
+    
+    .cardProd a{
+        border-collapse: 1em;
+    }
+
+    .cardProd .price{
+        width: 6em;
+        height: 6em;
+        line-height: 6em;
+        background-color: var(--color-price);
+        color: var(--color-secondary);
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: -3em;
+        font-size: var(--anchor-defaut);
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .cardProd li.title{
+        background-color: var(--color-detail2);
+        height: 8em;
+        line-height: 8em;
+        padding-top: 1.2em;
+        text-transform: uppercase;
+        color: var(--color-secondary);
+        font-weight: 800;
+        font-size: var(--paragraph-default);
+        border-radius: .8em .8em 0 0;
+    }
+
+    .cardProd li:last-child{
+        border-radius: 0 0 .8em .8em;
+        height: 8em;
+        line-height: 8em;
+    }
+
+    .cardProd a.btnDefault{
+        background-color: var(--color-detail2);
+        color: var(--color-secondary);
+        border: 1px solid var(--color-detail2);
+    }
+
+    .cardProd a.btnDefault:hover{
+        background-color: var(--color-btn-hover);
+        color: var(--color-detail2);
+        border: 1px solid var(--color-price);
+        font-weight: 500;
+    }
+
+    .recomended li:not(:first-child){
+        background-color: var(--color-detail2);
+        color: var(--color-secondary);
+    }
+
+    .recomended li.price{
+        background-color: var(--color-detail2);
+        color: var(--color-secondary);
+        border: 3px solid var(--color-price);
+    }
+
+    .recomended li a.btnDefault{
+        background-color: var(--color-price);
+        color: var(--color-secondary);
+        border: 1px solid var(--color-price);
+    }
+
+    .recomended li a.btnDefault:hover{
+        background-color: var(--color-btn-hover);
+        color: var(--color-secondary);
+        border: 1px solid var(--color-price);
+    }
+
+
+
+    
 /*#endregion*/
 
 /*#region services*/
@@ -306,10 +420,6 @@ video{
             background-color: var(--color-);
         } */
     /*end */
-
-    
-
-
 /*#endregion*/
 
 /*#region domain*/
@@ -362,5 +472,146 @@ iframe{
 /*#endregion*/
 
 /*#region contact*/
+    #contact{
+        text-align: center;
+        padding: 8em 0;
+    }
 
+    #contact h2{
+        margin-bottom: 1em;
+    }
+
+    .contactContainer{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .contactInner li{
+        padding: 1em;
+    }
+
+    .contactInner input[type=text],[type=email],.contactInner textarea{
+        background-color: var(--color-text-box);
+        width: 60%;
+        padding: .8em;
+        border: none;
+        border-radius: 1em;
+        color: var(--color-tertiary);
+        transition: .5s;
+        resize: none;
+    }
+
+    .contactInner input[type=text]:focus,[type=email]:focus,.contactInner textarea{
+        background-color: var(--color-text-box-focus);
+        transition: .5s;
+        resize: none;
+    }
+
+    .contactInner li textarea{
+        background-color: var(--color-text-box);
+        width: 60%;
+        padding: .8em;
+        border: none;
+        border-radius: 1em;
+        color: var(--color-tertiary);
+        transition: .5s;
+        resize: none;
+    }
+
+    .contactInner li textarea:hover{
+        background-color: var(--color-text-box-focus);
+        transition: .5s;
+        resize: none;
+    }
+
+    .formBtn input{
+        margin: 0 2em;
+        color: var(--color-secundary);
+        border-radius: 1em; 
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: var(--color-bg-footer);
+        padding: 3em;
+        font-size:  .8em;
+        position: relative;
+    }
+
+    .footerContainer{
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .footerContainer a{
+        height: 1.5rem;
+        line-height: 1.5rem;
+        transition: .5s;
+        opacity: .6;
+    }
+
+    .footerContainer a:hover{
+        opacity: 1;
+        transition: .5s;
+
+    }
+/*#endregion*/
+
+
+/*#region login*/
+    #login{
+        width: 100%;
+        text-align: center;
+        padding: 2em 0;
+        height: 80vh;
+    }
+
+    #login h2{
+        font-size: var(--super-hero);
+        padding: 2em 0 .8em 0;
+    }
+
+    .loginInner li{
+        padding: 1em;
+    }
+
+    .loginInner input[type=text],[type=password],.contactInner
+    textarea{
+        background-color: var(--color-text-box);
+        width: 20%;
+        padding: .8em;
+        border: none;
+        border-radius: 1em;
+        color: var(--color-tertiary);
+        transition: .5s;
+    }
+
+    .loginInner input[type=text]:focus,[type=password]:focus,.contactInner
+    textarea{
+        background-color: var(--color-text-box-focus);
+        transition: .5s;
+    }
+
+    .loginInner li.formBtn input{
+        margin: 0 2em;
+        color: var(--color-secundary);
+        border-radius: 1em; 
+        text-transform: capitalize;
+        font-size: var(--anchor-defaut);
+    }
+
+    .loginInner a{
+        color: var(--color-secondary);
+    }
+
+    .loginInner a:hover{
+        transition: .5s;
+        color: var(--color-primary);
+        font-weight: 200;
+    }
 /*#endregion*/

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--meuCSS-->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/media.css">
+        <!--boxIcons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--swiper-->
+        <link href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css' rel="stylesheet">
+        <!--Aos-->
+        <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel="stylesheet">
+        <!--favicon-->
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <title>Enxame Login</title>
+    </head>
+
+    <body>
+        <div class="containerLogin">
+            <header>
+                <nav>
+                    <div class="menu">
+                        <!-- logo -->
+                        <a href="index.html#home" class="logo">
+                            <i class='bx bxs-invader'></i>
+                            <span>Enxame</span>
+                        </a>
+                        <!-- menu -->
+                        <ul class="navbar">
+                            <!-- menu hamburguer -->
+                            <a class="btnMenu">
+                                <i class="bx bx-menu"></i>
+                            </a>
+                            
+                            <!-- menu normal -->
+                            <li>
+                                <a href="index.html#home">Home</a>
+                            </li>
+    
+                            <li>
+                                <a href="index.html#about">About</a>
+                            </li>
+    
+                            <!-- Dropdown -->
+                            <li>
+                                <a href="">
+                                    Specialties
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="index.html#emphasis">Emphasis</a></li>
+                                    <li><a href="index.html#products">Products</a></li>
+                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="index.html#domain">Domain</a></li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <a href="index.html#localization">Localization</a>
+                            </li>
+    
+                            <li>
+                                <a href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--region login-->
+                <section id="login">
+                    <h2>L<i class='bx bxs-circle-quarter bx-spin'></i>gin</h2>
+                    <div class="loginContainer">
+                        <form action="#" method="post">
+                            <ul class="loginInner">
+                                <li>
+                                    <input type="text" name="login" placeholder="userID" autocomplete="off" required>
+                                </li>
+                                
+                                <li>
+                                    <input type="password" name="password" placeholder="password" autocomplete="off" required>
+                                </li>
+                                <li class="formBtn">
+                                    <input type="submit" value="login" class="btnDefault">
+                                    <!-- <input type="reset" value="Cancel" class="btnDefault"> -->
+                                </li>
+                                <li>
+                                    <span>New in Enxame? </span><a href="#" class="accountBtn">Create an account</a>
+                                </li>
+
+                            </ul>
+                            <!-- API input -->
+                            <input type="hidden" name="accessKey" value="9e3ce818-c764-41d8-a8e6-91ffa7194137">
+                            <!-- redirect page -->
+                            <input type="hidden" name="redirectTo" value='http://127.0.0.1:5500/thanks.html'>
+                        </form>
+                    </div>
+                </section>
+                <section id="footer">
+                    <footer>
+                        <div class="footerContainer">
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="index.html#about">about</a></li>
+                                <li><a href="index.html#emphasis">emphasis</a></li>
+                                <li><a href="index.html#product">product</a></li>
+                                <li><a href="index.html#services">services</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="index.html#domain">domain</a></li>
+                                <li><a href="index.html#localization">localization</a></li>
+                                <li><a href="index.html#contact">contact</a></li>
+                            </ul>
+                            <!-- logo -->
+                            <a href="index.html#home" class="logo">
+                                <i class='bx bxs-invader'></i>
+                                <span>Enxame</span>
+                            </a>
+                            <h5>&copy; Copyright all rights reserved 2001's powered by ZikinhA</h5>
+                        </div>
+                    </footer>
+                </section>
+            </header>
+        </div>
+        <!--CDN's-->
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- myScript -->
+        <script src="script/script.js"></script>
+    </body>
+</html>
