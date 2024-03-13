@@ -239,6 +239,53 @@ video{
 /*#endregion*/
 
 /*#region about*/
+    #about{
+        background-image: url('../img/img11.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 8.5em 0;
+        height: 100vh;
+    }
+
+    #about h2{
+        font-size: var(--title-default);
+        padding: .5em;
+    }
+
+    .aboutContainer{
+        width: 75%;
+        text-align: center;
+    }
+
+    .card{
+        background-color: var(--color-card);
+        padding: 2.5em 1em;
+        backdrop-filter: blur(5px);
+    }
+
+    .card li:not(:first-child){
+        height: 2em;
+        line-height: 2em;
+    }
+
+    .card img{
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        border: 3px solid var(--color-secondary);
+        margin-top: 2.5em;
+    }
+
+    .cardTitulo, .cardCargo, .socialMedia{
+        font-size: var(--paragraph-default);
+    }
+
+    .aboutBase{
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 /*#endregion*/
 
@@ -357,10 +404,6 @@ video{
         color: var(--color-secondary);
         border: 1px solid var(--color-price);
     }
-
-
-
-    
 /*#endregion*/
 
 /*#region services*/

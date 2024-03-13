@@ -1,0 +1,83 @@
+/* Responsável pela responsividade, setar resoluções */
+
+/* 
+320px - 480px: dispositivos móveis
+461px - 768px: tablets, ipads
+769px - 1024px: telas pequenas, notebooks
+1025px - 1200px: desktop
+1201px - 1600px: telas grandes
+1601px - acima: Tvs e telas específicas
+*/
+
+
+/*1024px - telas pequenas e notebooks*/
+@media screen and (max-width: 1024px){
+    /*Logo*/
+    .logo span{
+        display: none;
+    }
+
+    /*emphasis*/
+    .imgFit{
+        width: 100vw;
+        height: 100vh;
+        padding: 10em 4em;
+    }
+
+    /*products*/
+    .productsContainer{
+        width: 80%;
+        padding: 1em 0;
+    }
+
+    .cardProd{
+        width: 23%;
+    }
+
+    /*services*/
+    .servicesContainer{
+        padding: 6em 0;
+    }
+
+    .servicesContainer h2{
+        font-size: 3em;
+    }
+
+    /*domain*/
+    #domain h2{
+        font-size: 4em;
+    }
+
+    /*localization*/
+    #localization h2{
+        padding-top: 1em;
+    }
+
+    /*contact*/
+    #contact{
+        text-align: center;
+        padding: 5em 0 0 0;
+    }
+
+    #contact h2{
+        font-size: var(--paragraph-default);
+    }
+
+    .contactContainer{
+        width: 60%;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+    /*login*/
+    #login{
+        padding: 0;
+    }
+
+    #login h2{
+        font-size: var(--super-hero);
+        padding-top: 1.5em;
+    }
+}
